@@ -28,8 +28,6 @@ nav ul li, nav ul li a{
     list-style: none;
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    font-size: 18px;
 }
 
 nav, nav ul {
@@ -52,7 +50,6 @@ nav, nav ul {
     box-shadow: 3px 3px 20px black;
 
     font-family: inherit;
-    cursor: pointer;
 }
 
 .popup {
@@ -61,7 +58,7 @@ nav, nav ul {
     height: 100%;
     position: absolute;
     top: 0;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
 
@@ -69,7 +66,7 @@ nav, nav ul {
 }
 
 .popupContent {
-    height: 400px;
+    height: 300px;
     width: 500px;
     background-color: white;
     padding: 20px;
@@ -80,7 +77,7 @@ nav, nav ul {
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 70px 1fr 1fr 150px 1fr;
+    grid-template-rows: 70px 30px 30px 80px 30px;
 
     align-items: center;
 }
@@ -121,11 +118,11 @@ nav, nav ul {
     grid-row: 4/5;
 }
 
-#questionInput {
+.questionInput {
     grid-column: 2/4;
     grid-row: 4/5;
 
-    height: 100px;
+    height: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -144,7 +141,6 @@ nav, nav ul {
     background-color: rgb(150, 150, 255);
     border-style: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    cursor: pointer;
 }
 
 .close {
@@ -157,5 +153,4 @@ nav, nav ul {
     border-radius: 50%;
 
    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.6);
-   cursor: pointer;
 }

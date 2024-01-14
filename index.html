@@ -9,7 +9,7 @@
 <body>
     <header>
         <div id="logoContainer">
-            <img src="images/logo.png" alt="Youth4Change logo">
+            <a href=""><img src="images/logo.png" alt="Youth4Change logo"></a>
         </div>
         <nav>
             <ul>
@@ -20,15 +20,32 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <nav><button>Request</button></nav>
+        <div><button id="requestBtn">Question?</button></div>
     </header>
     <main>
-        <section id="banner">
+        <form action="https://api.web3forms.com/submit" method="POST" class="popup">
+            <div class="popupContent">
+                <input type="hidden" name="access_key" value="01128de2-2bb0-46db-9074-2ff6bae8bee1">
+
+                <img src="images/request.png" alt="request">
+                <img class="close" src="images/close.png" alt="close">
+                <label class="nameLabel" for="name">Name:</label>
+                <input type="text" name="Name" class="nameInput" required>
+                <label class="emailLabel" for="email">Email:</label>
+                <input class="emailInput" type="email" name="Email" required>
+                <label class="questionLabel" for="question">Question:</label>
+                <textarea id="questionInput" placeholder="Type your inquiry here... " class="h-captcha" data-captcha="true" name="Question"></textarea>
+                <button type="submit" class="popupBtn">Submit</button>
+            </div>
+        </form>
+        <section>
             
         </section>
     </main>
     <footer>
 
     </footer>
+    <script src="scripts/app.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 </html>
