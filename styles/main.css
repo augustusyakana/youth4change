@@ -1,0 +1,48 @@
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: orangered;
+}
+
+#logoContainer img {
+    width: 15%;
+
+   margin-left: 50px;
+}
+
+nav ul li, nav ul li a{
+    text-decoration: none;
+    list-style: none;
+}
+
+nav, nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    margin-left: 20px;
+
+    border-radius: 10px;
+    width: 100px;
+    height: 25px;
+
+    background-color: rgb(150, 150, 255);
+
+    border-style: none;
+
+    box-shadow: 5px 5px 20px black;
+}
