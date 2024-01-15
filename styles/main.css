@@ -12,15 +12,31 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: orangered;
+    background: gray;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#logoContainer img {
-    width: 15%;
+header #logoContainer {
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8em;
+}
 
-   margin-left: 50px;
+#logoContainer h1 {
+    font-family: cursive;
+    margin-left: 10px;
+    /* border: 2px solid white; */
+    color: black;
+}
+
+#logoContainer img {
+    width: 80px;
+    
+    /* border: 2px solid white; */
+
 }
 
 nav ul li, nav ul li a{
@@ -37,10 +53,12 @@ nav, nav ul {
     justify-content: space-around;
     align-items: center;
     gap: 20px;
+
+    margin-right: -8em;
 }
 
 #requestBtn {
-    margin-left: 20px;
+    margin-left: 5em;
 
     border-radius: 10px;
     width: 100px;
