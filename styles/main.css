@@ -6,8 +6,6 @@ html {
 body {
     margin: 0;
     padding: 0;
-
-    color: white;
 }
 
 header {
@@ -92,11 +90,14 @@ nav, nav ul {
     grid-row: 1/2;
 
     margin: 0 auto;
+    color: black;
 }
 
 .nameLabel {
     grid-column: 1/2;
     grid-row: 2/3;
+
+    color: black;
 }
 
 .nameInput {
@@ -109,6 +110,8 @@ nav, nav ul {
 .emailLabel {
     grid-column: 1/2;
     grid-row: 3/4;
+
+    color: black;
 }
 
 .emailInput {
@@ -121,6 +124,8 @@ nav, nav ul {
 .questionLabel {
     grid-column: 1/2;
     grid-row: 4/5;
+
+    color: black;
 }
 
 #questionInput {
